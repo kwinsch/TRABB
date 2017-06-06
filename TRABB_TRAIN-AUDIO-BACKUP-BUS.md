@@ -1,4 +1,4 @@
-# Train Audio Backup Bus Specification
+﻿# Train Audio Backup Bus Specification
 Version 0
 Author: Kevin Bortis <kevin.bortis@ruf.ch>
 
@@ -120,14 +120,20 @@ Jedes Endgerät verfügt über eine im jeweiligen Zug eindeutige ID mit exakt 3 
 ### Gruppen (Group-ID)
 Zur Anwahl ganzer Gruppen sind in der Gerätekonfiguration die bildung von Gruppen IDs möglich. Folgend die präferierten Nummern für vordefinierte Empfänger. Die ID Länge beträgt exakt 3 Ziffern und beginnen zwingend mit einer Ziffer 0. Bereich 000 - 099.
 
+#### PA Gruppen
+Bereich 000 - 049
+
+#### Intercom Gruppen
+Bereich 050 - 099
+
 ```
 Wagen-PA '011' : Ansage in dem Wagen, in dem sich der Sender befindet.
 Zug-PA '012' : Ansage im jeweiligen Zug in dem sich der Sender befindet.
 Traktion-PA '013' : Ansage in der ganzen mehrteiligen Traktion.
-Cab '016' : Addressiert den Lokführer.
-Zub '017' : Addressiert alle Zugsbegleitersprechstellen im Zug.
-Pers '018' : Addressiert Cab und Zub.
-Zugsfunk '019' : Addressiert die Leitzentrale.
+Cab '051' : Addressiert den Lokführer.
+Zub '052' : Addressiert alle Zugsbegleitersprechstellen im Zug.
+Pers '053' : Addressiert Cab und Zub.
+Zugsfunk '054' : Addressiert die Leitzentrale.
 ```
 
 ### Zugsnummer (Train-ID)
@@ -163,7 +169,7 @@ Rufnummer: '43456 123 10 013 x' // Todo: Prüfsumme x in den Beispielen berechne
 #### Beispiel 2 - Intercom
 Ein in Not geratener Fahrgast möchte einen Notruf über die PEI-1 im Zug-1 durchführen. Das System ist so konfiguriert, dass der Lokführer und die Zugsbegleiter addressiert werden sollen.
 
-Rufnummer: '43456 125 10 018 x'
+Rufnummer: '43456 125 10 053 x'
 
 #### Beispiel 3 - Zub/Zub
 Der Zugsbeglieter möchte eine Verbindung zur Zub-2 im Zug-1 mit einer Zugsbeglietersprechstelle Zub-1 im Zug-1 aufbauen.
