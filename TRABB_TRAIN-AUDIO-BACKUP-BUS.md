@@ -1,6 +1,6 @@
 ﻿# Train Audio Backup Bus Specification
 Version 0
-Author: Kevin Bortis <kevin.bortis@ruf.ch>
+Author: Kevin Bortis <kevin@bortis.ch>
 
 ## Abstract
 Das folgende Dokument beschreibt ein analoges Audio Bussystem, das bei Ausfall des IP-Netzwerkes verwendet werden kann. Im Gegensatz zu dem in den 60er-Jahren entwickelten UIC568, werden andere Verfahren zur Signalisation verwendet, um das System flexibler und auf Hardwareseite günstiger zu gestalten. UIC568 erlaubt im Maximum 20 Teilnemer auf den Leitungen 5/6 und 7/8. Dies war keine Limitierung, solange keine Mehrfachtraktionen und Doppelstöckige Wagen eingesetzt wurden. PA-Verstärker gab es höchstens einen pro Wagen. Heute sind bis zu 16 Verstärker pro Zug und 32 in der Mehrfachtraktion vorhanden. Zudem kommen zusätzliche Audiogeräte wie Notsprechsysteme und Zugsfunk. Notsprechsysteme können an der Anzahl bis zu 200 Knoten pro Mehrfachtraktion ausmachen. Gemäss UIC568 müssen 20 mA bei 24 VDC pro Knoten und Funktion zur verfügung gestellt werden. Bei bei 264 Teilnemern, wären dies über 10 A nur für UIC 5/6 und 7/8! Somit ist UIC568 für moderne Züge nicht mehr geeignet.
